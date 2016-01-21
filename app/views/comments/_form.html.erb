@@ -1,0 +1,19 @@
+<h3>Post a Comment</h3>
+<p>(Comment form will go here)</p>
+
+
+<h3>Post a Comment</h3>
+
+<%= form_for [ @item, @comment ] do |f| %>
+  <p>
+    <%= f.label :username %><br/>
+    <%= f.text_field :username %>
+  </p>
+  <p>
+    <%= f.label :body %><br/>
+    <%= f.text_area :body %>
+  </p>
+  <p>
+    <%= f.submit 'Submit' %>
+  </p>
+<% end %>

@@ -1,0 +1,24 @@
+<h1><%= @item.name %></h1>
+
+<p>
+  Tags:
+  <% @item.tags.each do |tag| %>
+    <%= link_to tag.name, tag_path(tag) %>
+  <% end %>
+</p>
+
+
+<p><%= @item.description %></p>
+
+<h3>Comments</h3>
+<%= render partial: 'items/comment', collection: @item.comments %>
+
+<%= render partial: 'comments/form' %>
+
+
+<%= link_to "<< Back to List", items_path %>
+
+
+<%= link_to "delete", item_path(@item), method: :delete %>
+
+<%= link_to "edit", edit_item_path(@item) %>
