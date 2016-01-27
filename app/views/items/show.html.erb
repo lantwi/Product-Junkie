@@ -8,7 +8,10 @@
 </p>
 
 
-<p><%= @item.description %></p>
+<p>Description: <%= @item.description %></p>
+<img src="<%= @item.image_url %>" alt="">
+<a href="<%= @item.buy_url %>">Buy</a>
+
 
 <h3>Comments</h3>
 <%= render partial: 'items/comment', collection: @item.comments %>
