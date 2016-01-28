@@ -6,4 +6,61 @@
   <% end %>
 </ul>
 
-<%= link_to "<< Back to Tags List", tags_path %>
+<ul>
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://media.vogue.com/r/h_4000,w_3280/2016/01/19/marc-jacobs-velvet-noir-07.jpg" alt="...">
+      <div class="caption">
+        <% @tag.items.each do |item| %>
+        <h3> <%= item.name.(16) %></h3>
+        <p>Experience ultimate volume and the look of thick, false lashes with Velvet Noir Major Volume Mascara. The lash-maximizing, curvy brush places the most volume at the hard-to-reach center lash line, and the defining tip styles lashes for major drama. The super-concentrated black pigment delivers the greatest visual impact, and the Flash Volume Complex™ creates instant, smudge-proof length and volume in three strokes or less....</p>
+        <p><a class="btn btn-primary" role="button" <%= link_to "More",item_path(1) %></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+<% end %>
+</ul>
+
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="http://www.geniabeme.com/wp-content/uploads/2015/09/Lights-Camera-Lashes-Tarte-Mascara.jpg" alt="...">
+      <div class="caption">
+        <h3>Tarte Lights, Camera, Lashes™ 4-in-1 Mascara</h3>
+        <p>Tarte lights, camera, lashes™ 4-in-1 mascara could be considered a dramatic makeover for your lashes.....</p>
+        <p><a class="btn btn-primary" role="button" <%= link_to "More",item_path(2) %></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://i.ytimg.com/vi/r9YxNNKh19Q/hqdefault.jpg" alt="...">
+      <div class="caption">
+        <h3>Bobbi BrownEye Opening Mascara</h3>
+        <p>Create the ultimate lifted, faux lash look, from root to tip, with Bobbi Brown’s Eye Opening Mascara. Designed exclusively for this mascara, its jumbo brush head grabs and visibly pushes each and every lash upwards,.....</p>
+        <p><a class="btn btn-primary" role="button" <%= link_to "More",item_path(3) %></a></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="row">
+  <div class="col-sm-6 col-md-4">
+    <div class="thumbnail">
+      <img src="https://www.truthinaging.com/media/thumbnails/13970.jpg" alt="...">
+      <div class="caption">
+        <h3>Philosophy Purity Made Simple</h3>
+        <p>Begin with the most basic step of all. Purity Made Simple one-step facial cleanser is an award-winning cleanser that melts away dirt, oil, and makeup. It tones and lightly hydrates in one simple step for skin that feels perfectly clean and comfortably balanced. Formulated for all skin types and gentle.....</p>
+        <p><a class="btn btn-primary" role="button" <%= link_to "More",item_path(3) %></a></p>
+      </div>
+    </div>
+  </div>
+</div>
